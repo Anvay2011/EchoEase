@@ -1,0 +1,8 @@
+/* index.css — plain CSS after Tailwind removal */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  color: #000;
+}

@@ -1,0 +1,224 @@
+/* App.css - Light blue + white UI */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f7ff;
+  color: #1e3a8a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 12px 24px;
+}
+
+.right-panel {
+  width: 320px;
+  border-left: 1px solid #e5e7eb;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f9fbff;
+  border-radius: 10px;
+}
+
+.mode-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 10px 18px;
+  border: 2px solid #93c5fd;
+  border-radius: 10px;
+  background: #e0f2fe;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1e40af;
+  transition: all 0.2s ease;
+}
+
+.mode-btn:hover {
+  background: #bfdbfe;
+}
+
+.mode-btn.active {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.sliders label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sliders input[type="range"] {
+  width: 100%;
+  margin-top: 6px;
+  accent-color: #3b82f6;
+}
+
+/* 🔹 Start/Stop button section */
+.controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;  /* Center buttons */
+  gap: 20px;
+}
+
+.big {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+}
+
+/* ✅ Start button - green */
+.big.start {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.big.start:hover:not(:disabled) {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ⏹ Stop button - red */
+.big.stop {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.big.stop:hover:not(:disabled) {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled */
+.big:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.status {
+  font-size: 14px;
+  color: #374151;
+  margin-top: 4px;
+}
+
+.word-list {
+  min-height: 240px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  padding: 8px;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 6px;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e40af;
+}
+
+.word-item .x {
+  background: #ef4444;
+  border: none;
+  color: #ffffff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.word-item .x:hover {
+  background: #dc2626;
+}
+
+.add-row {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #93c5fd;
+}
+
+.add-row button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.add-row button:hover {
+  background: #2563eb;
+}
+/* Logo next to EchoEase text */
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e40af;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
